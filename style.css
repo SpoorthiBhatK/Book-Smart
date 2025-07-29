@@ -1,0 +1,99 @@
+body {
+    background-color: #f4f8fb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #023e8a;
+    color: white;
+    padding: 30px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+  }
+  
+  header .container {
+    display: block; /* ✅ Ensure header elements stack vertically */
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+  
+  header p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 8px 16px;
+    background-color: #4ecbed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3bb3d4;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section {
+    width: 45%;
+    margin: 0 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    color: #023e8a;
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  
+  .section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4ecbed;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .section a:hover {
+    background-color: #3bb3d4;
+  }
+  
+  .section img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  

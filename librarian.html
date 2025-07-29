@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seat Booking Details | Book Smart</title>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCTp_NJuLG6kvDha3mplOeU8hUJ3ft9mGA",
+      authDomain: "book-smart-c3035.firebaseapp.com",
+      databaseURL: "https://book-smart-c3035-default-rtdb.firebaseio.com",
+      projectId: "book-smart-c3035",
+      storageBucket: "book-smart-c3035.firebasestorage.app",
+      messagingSenderId: "513786778563",
+      appId: "1:513786778563:web:707945c3d426a5c0b9a376",
+      measurementId: "G-4P1F00JL5L"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <link rel="stylesheet" href="style_seat.css">
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      text-align: center;
+    }
+    th {
+      background-color: #023e8a;
+      color: white;
+    }
+    .clear-btn {
+      padding: 6px 12px;
+      font-size: 14px;
+      background-color: #d00000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Book Smart</h1>
+  <h2>Seat Booking Details</h2>
+</header>
+
+<main>
+  <table>
+    <thead>
+      <tr>
+        <th>Sl. No</th>
+        <th>Username</th>
+        <th>Seat Number</th>
+        <th>Time</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="reservationTable">
+      <!-- Dynamic data -->
+    </tbody>
+  </table>
+</main>
+
+<script>
+  const tableBody = document.getElementById('reservationTable');
+  let reservations = JSON.parse(localStorage.getItem('reservations')) || [];
+  let seatStatus = JSON.parse(localStorage.getItem('seatStatus')) || {};
+
+  function renderTable() {
+    tableBody.innerHTML = ''; // Clear old data
+    reservations.forEach((r, i) => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${i + 1}</td>
+        <td>${r.user}</td>
+        <td>${r.seatNumber}</td>
+        <td>${r.time}</td>
+        <td><button class="clear-btn" onclick="removeReservation(${i})">Clear</button></td>
+      `;
+      tableBody.appendChild(row);
+    });
+  }
+
+  function removeReservation(index) {
+    const seatToClear = reservations[index].seatNumber;
+    delete seatStatus[seatToClear]; // Free the seat
+    reservations.splice(index, 1); // Remove reservation entry
+
+    // Save updates
+    localStorage.setItem('seatStatus', JSON.stringify(seatStatus));
+    localStorage.setItem('reservations', JSON.stringify(reservations));
+
+    renderTable(); // Refresh
+  }
+
+  renderTable();
+</script>
+
+</body>
+</html>

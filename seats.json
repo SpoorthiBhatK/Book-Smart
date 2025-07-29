@@ -1,0 +1,154 @@
+{
+  "seats": {
+    "H101": {
+      "status": false,
+      "seatID": "H101",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H102": {
+      "status": false,
+      "seatID": "H102",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H103": {
+      "status": false,
+      "seatID": "H103",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H104": {
+      "status": false,
+      "seatID": "H104",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H105": {
+      "status": false,
+      "seatID": "H105",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H106": {
+      "status": false,
+      "seatID": "H106",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H107": {
+      "status": false,
+      "seatID": "H107",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H108": {
+      "status": false,
+      "seatID": "H108",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H109": {
+      "status": false,
+      "seatID": "H109",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H110": {
+      "status": false,
+      "seatID": "H110",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H111": {
+      "status": false,
+      "seatID": "H111",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H112": {
+      "status": false,
+      "seatID": "H112",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H113": {
+      "status": false,
+      "seatID": "H113",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H114": {
+      "status": false,
+      "seatID": "H114",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H115": {
+      "status": false,
+      "seatID": "H115",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H116": {
+      "status": false,
+      "seatID": "H116",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H117": {
+      "status": false,
+      "seatID": "H117",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H118": {
+      "status": false,
+      "seatID": "H118",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H119": {
+      "status": false,
+      "seatID": "H119",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H120": {
+      "status": false,
+      "seatID": "H120",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H121": {
+      "status": false,
+      "seatID": "H121",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H122": {
+      "status": false,
+      "seatID": "H122",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H123": {
+      "status": false,
+      "seatID": "H123",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H124": {
+      "status": false,
+      "seatID": "H124",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H125": {
+      "status": false,
+      "seatID": "H125",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H126": {
+      "status": false,
+      "seatID": "H126",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H127": {
+      "status": false,
+      "seatID": "H127",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H128": {
+      "status": false,
+      "seatID": "H128",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H129": {
+      "status": false,
+      "seatID": "H129",
+      "lastUpdated": "2025-05-06 16:00:00"
+    },
+    "H130": {
+      "status": false,
+      "seatID": "H130",
+      "lastUpdated": "2025-05-06 16:00:00"
+    }
+  }
+}
